@@ -17,6 +17,8 @@ disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要�
 [author]
   name = "空空"
 
+
+
 [params]
   author = "空空"
   subtitle = "You can be just the one you wanna be！"
@@ -25,6 +27,7 @@ disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要�
   busuanzi = true #启用不算子网页统计
   googleAd = ""  #ca-pub-xxxxxxxxxxxxxx
   localSearch = true # 启用本地搜索
+  beian = "粤ICP备14083194号"
 
   # 这里我存放在了主题的static文件夹里，根目录的似乎也可以
   customCSS = ['douban.css', 'other.css']
