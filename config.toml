@@ -49,7 +49,7 @@ disqusShortname = "yourdiscussshortname"  ## 是否开启disqus评论，不要�
 [params.waline]
   enable = true
   placeholder = "说点什么吧..."
-  serverURL = "https://kke5pv5n.api.lncldglobal.com" #换成你的serverURL
+  serverURL = "comment-of-dahouzi-j0jyjmhi9-lglgl.vercel.app" #换成你的serverURL
 ## 开启版权声明，协议名字和链接都可以换
 [params.cc]
     name = "知识共享署名-非商业性使用-禁止演绎 4.0 国际许可协议"
