@@ -3,6 +3,7 @@ languageCode = "zh-CN"
 title = "大猴子"
 theme = "maupassant"
 googleAnalytics = ""  # UA-XXXXXXXX-X/G-XXXXXXXXXX
+defaultContentLanguage = "zh-hans"
 
 ## 保持分类的原始名字（false会做转小写处理）
 preserveTaxonomyNames = true
