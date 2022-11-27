@@ -9,20 +9,21 @@
     <meta name="referrer" content="no-referrer-when-downgrade">
     
 
-    <title>搜索 | 大猴子</title>
-    <meta property="og:title" content="搜索 - 大猴子">
+    <title>闲聊瞎扯 | 大猴子</title>
+    <meta property="og:title" content="闲聊瞎扯 - 大猴子">
     <meta property="og:type" content="article">
         
         
     <meta name="Keywords" content="旅行,读书,零代码,临终关怀,职业规划,生涯规划">
-    <meta name="description" content="搜索页面">
+    <meta name="description" content="闲聊瞎扯">
         
     <meta name="author" content="空空">
-    <meta property="og:url" content="https://dahouzi.cn/search/">
+    <meta property="og:url" content="https://dahouzi.cn/categories/%E9%97%B2%E8%81%8A%E7%9E%8E%E6%89%AF/">
     <link rel="shortcut icon" href='/favicon.ico'  type="image/x-icon">
 
     <link rel="stylesheet" href='/css/normalize.css'>
     <link rel="stylesheet" href='/css/style.css'>
+    <link rel="alternate" type="application/rss+xml" href="https://dahouzi.cn/categories/%E9%97%B2%E8%81%8A%E7%9E%8E%E6%89%AF/index.xml" title="大猴子" />
     <script type="text/javascript" src="//cdn.bootcdn.net/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 
     
@@ -64,70 +65,59 @@
             <div class="col-group">
 
                 <div class="col-8" id="main">
-                    <div class="res-cons">
+                    
+<div class="res-cons">
+    
     <h3 class="archive-title">
-        搜索
-        <span class="keyword">哈哈</span>
-        的结果
+        
+            <span>4</span>
+        
+            <span>2</span>
+        
+            <span>1</span>
+        
+            <span>1</span>
+        
+        <span class="keyword">闲聊瞎扯</span>
+        中的文章
     </h3>
+    
 
+    
     <article class="post">
         <header>
             <h1 class="post-title">
-                <a href="链接" target="_blank">标题</a>
+                <a href="https://dahouzi.cn/%E7%96%AB%E6%83%85%E4%B9%8B%E4%B8%8B%EF%BC%8C%E7%9A%86%E4%B8%8D%E6%98%AF%E4%BA%BA.html" target="_blank">疫情之下，你我皆不是人​</a>
             </h1>
         </header>
         
-        <div class="post-content">
-            概要……
-            <p class="readmore"><a href="链接" target="_blank">阅读全文</a></p>
-        </div>
-    </article>
+  <time datetime="2021-09-26T09:35:00Z" class="post-meta meta-date dt-published">
+    2021年9月26日
+  </time>
 
+
+<div class="post-meta meta-category">
+  <span>&nbsp;|</span>
+  
+    <a href='/categories/%E9%97%B2%E8%81%8A%E7%9E%8E%E6%89%AF' target="_blank">闲聊瞎扯</a>
+  
 </div>
 
-<script type="text/javascript">
 
-    var getUrlParameter = function getUrlParameter (sParam) {
-        var sPageURL = window.location.search.substring(1),
-            sURLVariables = sPageURL.split('&'),
-            sParameterName,
-            i;
+        <div class="post-content">
+            疫情之下，你我皆不是人​ 作为一个曾经自费7天的”密接人员“，当看到268+100/天的住宿伙食账单，外加没有WiFi和卫生间灯泡不亮的公租房房间时，内心无不充满怒火。 但我深知，这个国家，就这样。再努力，也只能这样了。毕竟改革开放不过四十余年，加入WTO不过二十余年。 所谓屁股决定脑……
+            <p class="readmore"><a href="https://dahouzi.cn/%E7%96%AB%E6%83%85%E4%B9%8B%E4%B8%8B%EF%BC%8C%E7%9A%86%E4%B8%8D%E6%98%AF%E4%BA%BA.html" target="">阅读全文</a></p>
+        </div>
+    </article>
+    
 
-        for (i = 0; i < sURLVariables.length; i++) {
-            sParameterName = sURLVariables[i].split('=');
+    
 
-            if (sParameterName[0] === sParam) {
-                return sParameterName[1] === undefined ? true : decodeURIComponent(sParameterName[1]);
-            }
-        }
-    };
 
-    $(document).ready(function () {
-        var q = getUrlParameter("q");
-        $("span.keyword").text(q);
-        $("article.post").remove();
-        $.ajax({
-            url: 'https:\/\/dahouzi.cn\/index.xml',
-            dataType: "xml",
-            success: function (data) {
-                $(data).find("item").each(function () {
-                    var item = $(this);
-                    var title = item.find("title").text();
-                    if (title.toLowerCase().indexOf(q.toLowerCase()) >= 0) {
-                        var url = item.find("link").text();
-                        var searchItem = `<article class="post"><header><h1 class="post-title"><a href="` + url + `" target="_blank">` + title + `</a></h1></header>`;
-                        var pubDate = new Date(item.find("pubDate").text())
-                        searchItem += `<time class="post-meta meta-date">` + pubDate.getFullYear() + `-` + (pubDate.getMonth() + 1) + `-` + pubDate.getDate() + `</time>`;
-                        searchItem += `<div class="post-content">` + item.find("description").text() + `……<p class="readmore"><a href="` + url + `" target="_blank">"阅读全文"</a></p></div></article>`;
 
-                        $("div.res-cons").append(searchItem);
-                    }
-                });
-            }
-        });
-    });
-</script>
+
+
+</div>
 
                     <footer id="footer">
     <div>
@@ -141,17 +131,6 @@
 </footer>
 
 
-    
-    
-    <script type="text/javascript">
-        window.MathJax = {
-            tex2jax: {
-                inlineMath: [['$', '$']],
-                processEscapes: true
-                }
-            };
-    </script>
-    <script src='//cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.5/MathJax.js?config=TeX-MML-AM_CHTML' async></script>
 
 <a id="rocket" href="#top"></a>
 <script type="text/javascript" src='/js/totop.js?v=0.0.0' async=""></script>
