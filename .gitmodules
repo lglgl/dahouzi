@@ -1,4 +1,4 @@
 [submodule "maupassant"]
-	path = themes/maupassant
+	path = /themes/maupassant
 	url = https://github.com/pagecho/maupassant
 	branch = release
