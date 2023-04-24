@@ -1,0 +1,4 @@
+[submodule "maupassant"]
+	path = themes/maupassant
+	url = http://github.xxx.xxx/xxxx
+	branch = release
