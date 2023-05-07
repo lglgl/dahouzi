@@ -4,6 +4,7 @@ title = "大猴子"
 theme = "maupassant"
 googleAnalytics = ""  # UA-XXXXXXXX-X/G-XXXXXXXXXX
 defaultContentLanguage = "zh-hans"
+publishDir = "docs" 
 
 ## 保持分类的原始名字（false会做转小写处理）
 preserveTaxonomyNames = true
@@ -50,8 +51,6 @@ summaryLength = 140
 ## 配置网站菜单
 
 [menu]
-
-
   [[menu.main]]
     identifier = "archives"
     name = "归档"
