@@ -55,6 +55,8 @@
                     
                     <a  href="https://dahouzi.cn/archives/" title="归档">归档</a>
                     
+                    <a class="current" href="https://dahouzi.cn/career/" title="规划">规划</a>
+                    
                     <a  href="https://dahouzi.cn/about/" title="关于">关于</a>
                     
                 </nav>
@@ -70,7 +72,132 @@
                 <div class="col-8" id="main">
                     
 <div class="res-cons">
-    
+    <style type="text/css">
+    .post-toc {
+        position: fixed;
+        width: 200px;
+        margin-left: -210px;
+        padding: 5px 10px;
+        font-family: Athelas, STHeiti, Microsoft Yahei, serif;
+        font-size: 12px;
+        border: 1px solid rgba(0, 0, 0, .07);
+        border-radius: 5px;
+        background-color: rgba(255, 255, 255, 0.98);
+        background-clip: padding-box;
+        -webkit-box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        box-shadow: 1px 1px 2px rgba(0, 0, 0, .125);
+        word-wrap: break-word;
+        white-space: nowrap;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+        z-index: 999;
+        cursor: pointer;
+        max-height: 70%;
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+
+    .post-toc .post-toc-title {
+        width: 100%;
+        margin: 0 auto;
+        font-size: 20px;
+        font-weight: 400;
+        text-transform: uppercase;
+        text-align: center;
+    }
+
+    .post-toc .post-toc-content {
+        font-size: 15px;
+    }
+
+    .post-toc .post-toc-content>nav>ul {
+        margin: 10px 0;
+    }
+
+    .post-toc .post-toc-content ul {
+        padding-left: 20px;
+        list-style: square;
+        margin: 0.5em;
+        line-height: 1.8em;
+    }
+
+    .post-toc .post-toc-content ul ul {
+        padding-left: 15px;
+        display: none;
+    }
+
+    @media print,
+    screen and (max-width:1057px) {
+        .post-toc {
+            display: none;
+        }
+    }
+</style>
+<div class="post-toc" style="position: absolute; top: 188px;">
+    <h2 class="post-toc-title">文章目录</h2>
+    <div class="post-toc-content">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#1年度计划">1、年度计划</a>
+      <ul>
+        <li><a href="#11-2023年计划">1.1 2023年计划</a></li>
+        <li><a href="#12-2022年目标">1.2 2022年目标</a></li>
+        <li><a href="#13-2021年目标">1.3 2021年目标</a></li>
+      </ul>
+    </li>
+    <li><a href="#2职业生涯阶段">2、职业生涯阶段</a>
+      <ul>
+        <li><a href="#21-第一阶段2435岁">2.1 第一阶段（24~35岁）</a></li>
+        <li><a href="#22-第二阶段3547岁">2.2 第二阶段（35~47岁）</a></li>
+        <li><a href="#23-第三阶段60岁">2.3 第三阶段（60岁）</a></li>
+        <li><a href="#24-过程控制">2.4 过程控制</a></li>
+      </ul>
+    </li>
+    <li><a href="#3一生要完成的事情">3、一生要完成的事情</a>
+      <ul>
+        <li><a href="#读书">读书</a></li>
+        <li><a href="#英语">英语</a></li>
+        <li><a href="#体验不同生活">体验不同生活</a></li>
+        <li><a href="#生活在二线城市">生活在二线城市</a></li>
+        <li><a href="#无时间限制的财务自由">无时间限制的财务自由</a></li>
+        <li><a href="#两个孩子">两个孩子</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+    </div>
+</div>
+<script type="text/javascript">
+    $(document).ready(function () {
+        var postToc = $(".post-toc");
+        if (postToc.length) {
+            var leftPos = $("#main").offset().left;
+            if (leftPos < 220) {
+                postToc.css({ "width": leftPos - 10, "margin-left": (0 - leftPos) })
+            }
+
+            var t = postToc.offset().top - 20,
+                a = {
+                    start: {
+                        position: "absolute",
+                        top: t
+                    },
+                    process: {
+                        position: "fixed",
+                        top: 20
+                    },
+                };
+            $(window).scroll(function () {
+                var e = $(window).scrollTop();
+                e < t ? postToc.css(a.start) : postToc.css(a.process)
+            })
+        }
+
+        if ($("#TableOfContents").children().length < 1) {
+            $(".post-toc").remove();
+        }
+    })
+</script>
     <article class="post">
         <header>
             <h1 class="post-title">规划</h1>
@@ -90,161 +217,256 @@
         </div>
         
         
+        <div class="clear" style="display: none">
+            <div class="toc-article">
+                <div class="toc-title">文章目录</div>
+            </div>
+        </div>
+        
         <div class="post-content">
-            <ul>
-<li>道，世间万变，唯道不变。</li>
+            <h2 id="1年度计划">1、年度计划</h2>
+<h3 id="11-2023年计划">1.1 2023年计划</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体</th>
+<th>计划</th>
+<th>备注</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>英语</td>
+<td>雅思5.5-6</td>
+<td>1-4月</td>
+<td></td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>学习</td>
+<td>申请学校</td>
+<td>4-6月</td>
+<td></td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>工作</td>
+<td>深圳，不限行业</td>
+<td>5-10月</td>
+<td>年薪20万</td>
+<td>执行中</td>
+</tr>
+<tr>
+<td>日语</td>
+<td>入门（熟悉五十音图，200个单词）</td>
+<td>8-12月</td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>技术</td>
+<td>数据库OCP</td>
+<td>7-8月</td>
+<td>考试</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>绩点满足交换生条件。</li>
 </ul>
-<h5 id="2023年计划">2023年计划</h5>
-<p>技术为道，经济为本。切换方向为以技术服务经济的线路。</p>
-<h5 id="2022年目标">2022年目标</h5>
-<p>类别</p>
-<p>具体</p>
-<p>计划</p>
-<p>备注</p>
-<p>结果</p>
-<p>韩语</p>
-<p>4级</p>
-<p>持续学习即可</p>
-<p>10月验收</p>
-<p>英语</p>
-<p>雅思高级词汇及时态总结</p>
-<p>3个月时态</p>
-<p>归类于-技能补充</p>
-<p>健康</p>
-<p>爬山、长跑各3次</p>
-<p>隔月</p>
-<p>技术</p>
-<p>备份、压缩各类文章5篇</p>
-<p>中期目标</p>
-<p>管理学</p>
-<p>输出一门基础课程笔记</p>
-<p>准备</p>
-<p>长期目标</p>
-<p>教育学、语言学</p>
-<p>输出基础课程笔记</p>
-<p>准备</p>
-<p>-</p>
-<p>备注： 1、视菲律宾旅游签情况，考虑以英语为重点。不评估切换成本。 2、持续上一年期货投资分析，以原油为特定品种研究。</p>
-<h6 id="2021年目标">2021年目标</h6>
-<p>类别</p>
-<p>具体</p>
-<p>计划</p>
-<p>备注</p>
-<p>结果</p>
-<p>职业通用技能</p>
-<p>PTE英语</p>
-<p>1-5月</p>
-<p>一对一网课</p>
-<p>未开展</p>
-<p>职业专业技能（技术）</p>
-<p>数据库OCP</p>
-<p>1-12月</p>
-<p>过独立运维之后</p>
-<p>部分完成</p>
-<p>职业专业技能（业务）</p>
-<p>期货投资分析</p>
-<p>1-5月</p>
-<p>30%</p>
-<p>个人生活（健康）</p>
-<p>增重</p>
-<p>10斤</p>
-<p>营养学计划，补充蛋白粉/复合维生素</p>
-<p>没能坚持</p>
-<p>兴趣学习</p>
-<p>法考</p>
-<p>梳理知识框架</p>
-<p>随心</p>
-<p>未开展</p>
-<p>计划之外：韩语学习。</p>
-<p>结论：重大调整。</p>
-<h3 id="一职业生涯阶段">一、职业生涯阶段</h3>
-<p>1、85%的成功靠情商15%靠技术 2、第一阶段学习为主，以自我要求的技能树为目标；第二阶段输出知识，获得行业“成就”和经济回报；第三阶段输出经验，获得成就感。</p>
-<h4 id="第一阶段2435岁">第一阶段（24~35岁）</h4>
-<blockquote>
+<h3 id="12-2022年目标">1.2 2022年目标</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体</th>
+<th>计划</th>
+<th>备注</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>韩语</td>
+<td>4级</td>
+<td>持续学习</td>
+<td>10月验收</td>
+<td>未考</td>
+</tr>
+<tr>
+<td>英语</td>
+<td>雅思高级词汇及时态总结</td>
+<td>3个月时态</td>
+<td>归类于-技能补充</td>
+<td>已完成</td>
+</tr>
+<tr>
+<td>健康</td>
+<td>爬山、长跑各3次</td>
+<td>隔月</td>
+<td></td>
+<td>未完成</td>
+</tr>
+<tr>
+<td>技术</td>
+<td>备份、压缩各类文章5篇</td>
+<td></td>
+<td></td>
+<td>未完成</td>
+</tr>
+<tr>
+<td>中期目标</td>
+<td>管理学输出一门基础课程笔记</td>
+<td>准备</td>
+<td></td>
+<td>未完成</td>
+</tr>
+<tr>
+<td>长期目标</td>
+<td>教育学、语言学输出基础课程笔记</td>
+<td>准备</td>
+<td></td>
+<td>未完成</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>备注：</li>
+<li>1、视菲律宾旅游签情况，考虑以英语为重点。不评估切换成本。</li>
+<li>2、持续上一年期货投资分析，以原油为特定品种研究。</li>
+</ul>
+<h3 id="13-2021年目标">1.3 2021年目标</h3>
+<table>
+<thead>
+<tr>
+<th>类别</th>
+<th>具体</th>
+<th>计划</th>
+<th>备注</th>
+<th>结果</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>职业通用技能</td>
+<td>PTE英语</td>
+<td>1-5月</td>
+<td>一对一网课</td>
+<td>未开展</td>
+</tr>
+<tr>
+<td>职业专业技能（技术）</td>
+<td>数据库OCP</td>
+<td>1-12月</td>
+<td>过独立运维之后</td>
+<td>部分完成</td>
+</tr>
+<tr>
+<td>职业专业技能（业务）</td>
+<td>期货投资分析</td>
+<td>1-5月</td>
+<td></td>
+<td>30%</td>
+</tr>
+<tr>
+<td>个人生活（健康）</td>
+<td>增重10斤</td>
+<td>1-12月</td>
+<td>营养学计划，补充蛋白粉/复合维生素</td>
+<td>没能坚持</td>
+</tr>
+<tr>
+<td>兴趣学习</td>
+<td>法考</td>
+<td>1-12月</td>
+<td>梳理知识框架随心</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>未开展计划之外：韩语学习。结论：重大调整。</li>
+</ul>
+<h2 id="2职业生涯阶段">2、职业生涯阶段</h2>
+<pre tabindex="0"><code>专业方向：1、数据治理 2、数据开发 3、数据运维
+行业选择：1、金融业 2、制造业 3、待研究
+城市优先：1、香港 2、新加坡 3、深圳
+薪酬发展：20w--&gt;35w--&gt;50w
+</code></pre><ol>
+<li>85%的成功靠情商15%靠技术</li>
+<li>第一阶段学习为主，以自我要求的技能树为目标；</li>
+<li>第二阶段输出知识，获得行业“成就”和经济回报；第三阶段输出经验，获得成就感。</li>
+</ol>
+<h3 id="21-第一阶段2435岁">2.1 第一阶段（24~35岁）</h3>
 <p>劳动力作为主要收入 安身立命，一份职业，坚持十年</p>
-</blockquote>
-<h5 id="前期2427岁">前期（24~27岁）</h5>
+<h4 id="211-前期2427岁">2.1.1 前期（24~27岁）</h4>
 <ol>
 <li>职业技能：基础开发/数据库管理项目经验、网络工程师（中级职称）</li>
 <li>可迁移技能：系统集成项目管理工程师（中级职称）</li>
 <li>可选岗位（初级岗位）：开发，运维、数据库管理</li>
 <li>企业类型：国内民营（股份制/上市企业优先）、国资/企事业单位（党员备选）</li>
 </ol>
-<p>上升通道：岗位深耕</p>
-<blockquote>
-<p>总结：第一份工作已经结束，收获：三年制造业行业经验，一个项目管理证书，部门大部分压力承担。</p>
-</blockquote>
-<h5 id="中期2831岁">中期（28~31岁）</h5>
-<blockquote>
-<p>重大风险：结婚</p>
-</blockquote>
-<ol>
+<ul>
+<li>上升通道：岗位深耕</li>
+<li>总结：第一份工作已经结束，收获：三年制造业行业经验，一个项目管理证书，部门大部分压力承担。</li>
+</ul>
+<h4 id="212-中期2831岁">2.1.2 中期（28~31岁）</h4>
+<pre tabindex="0"><code>重大风险：结婚
+</code></pre><ol>
 <li>职业技能：计算机高级理论（机器学习）、系统规划与管理师（高级职称）、数据库管理（OCP备选）</li>
 <li>可迁移技能：雅思基础6.0（口语和写作）、管理学理论、财务税务</li>
 <li>可选岗位（中级岗位）：计算机类中级工程师</li>
 <li>企业类型：国资/企事业单位（备选）、国内民营（上市企业）</li>
 </ol>
-<p>上升通道：学历晋升、岗位深耕</p>
-<blockquote>
-<p>已起步，金融行业，备考证券从业资格和期货从业资格。 2020年目标：通过两个资格考试，工作顺利转正，雅思至少考一次。</p>
-</blockquote>
-<p>预计2021年底，准备雅思考试，放下工作，申请东南亚研究生。</p>
-<h5 id="后期3235岁">后期（32~35岁）</h5>
-<blockquote>
-<p>重大风险：家庭收入压力</p>
-</blockquote>
-<ol>
+<ul>
+<li>上升通道：学历晋升、岗位深耕</li>
+<li>已起步，金融行业，备考证券从业资格和期货从业资格。 2020年目标：通过两个资格考试，工作顺利转正，雅思至少考一次。</li>
+<li>预计2021年底，准备雅思考试，放下工作，申请东南亚研究生。</li>
+</ul>
+<h4 id="213-后期3235岁">2.1.3 后期（32~35岁）</h4>
+<pre tabindex="0"><code>重大风险：家庭收入压力
+</code></pre><ol>
 <li>职业技能：计算机高级理论（机器学习）、系统规划与管理师（高级职称）</li>
 <li>可迁移技能：雅思基础7.0、沟通技巧、领导力</li>
 <li>可选岗位（中级岗位）：计算机类高级工程师</li>
 <li>企业类型：创业企业、国资/企事业单位（备选）、国内民营（上市企业）</li>
 </ol>
 <p>不考虑上升：职业转型</p>
-<h4 id="第二阶段3547岁">第二阶段（35~47岁）</h4>
-<blockquote>
-<p>不依赖劳动力作为主要收入 创造价值（创业或加入创业企业）</p>
-</blockquote>
-<h5 id="前期3540岁">前期（35~40岁）</h5>
+<h3 id="22-第二阶段3547岁">2.2 第二阶段（35~47岁）</h3>
+<ul>
+<li>不依赖劳动力作为主要收入</li>
+<li>创造价值（创业或加入创业企业）</li>
+</ul>
+<h4 id="221-前期3540岁">2.2.1 前期（35~40岁）</h4>
 <ol>
 <li>回归家庭：家庭教育、家庭关系</li>
 <li>思考投资性收入方向</li>
 <li>知识性输出（初试）</li>
 </ol>
-<h4 id="第三阶段60岁">第三阶段（60岁）</h4>
-<blockquote>
+<h3 id="23-第三阶段60岁">2.3 第三阶段（60岁）</h3>
 <p>摆脱家庭经济顾虑，实现个人价值，知识输出为主</p>
-</blockquote>
-<hr>
-<h3 id="二过程控制">二、过程控制</h3>
-<blockquote>
-<p>人生价值观：健康、家庭、财富</p>
-</blockquote>
-<ol>
-<li>年度回顾目标</li>
-<li>干系人维护</li>
-</ol>
-<hr>
-<h3 id="三技能点">三、技能点</h3>
-<p>生存技能 个人 家庭 社会</p>
-<hr>
-<h4 id="四一生要完成的事情">四、一生要完成的事情</h4>
-<blockquote>
-<p>世界上一切的事情，有得必有舍。一个大树，向上生长，吸收更多阳光固然重要，但平衡脚下的根，却能够在风雨中依然矗立。</p>
-</blockquote>
-<h5 id="读书">读书</h5>
+<h3 id="24-过程控制">2.4 过程控制</h3>
+<pre tabindex="0"><code>人生价值观：健康、家庭、财富
+1.  年度回顾目标
+2.  干系人维护
+</code></pre><h2 id="3一生要完成的事情">3、一生要完成的事情</h2>
+<pre tabindex="0"><code> 世界上一切的事情，有得必有舍。一个大树，向上生长，吸收更多阳光固然重要，
+ 但平衡脚下的根，却能够在风雨中依然矗立。
+</code></pre><h3 id="读书">读书</h3>
 <p>找一个自己喜欢的专业，再读个研究生！</p>
-<h5 id="英语">英语</h5>
+<h3 id="英语">英语</h3>
 <p>雅思7.0，短期内达到6.0，实现可与英语母语者日常交流</p>
-<h5 id="体验不同生活">体验不同生活</h5>
+<h3 id="体验不同生活">体验不同生活</h3>
 <p>国内外各10个有意义的地方去定居生活15天。</p>
-<h5 id="生活在二线城市">生活在二线城市</h5>
+<h3 id="生活在二线城市">生活在二线城市</h3>
 <p>一生至少有一半的时间生活在二线以下的城市。享受一线城市的便利，又有乡间小野的悠闲。不排除偶尔到各地乡村短期度假。</p>
-<h5 id="无时间限制的财务自由">无时间限制的财务自由</h5>
-<blockquote>
+<h3 id="无时间限制的财务自由">无时间限制的财务自由</h3>
 <p>人生最大的财富不是拥有100块，而是拥有将100块变成成1000块价值的能力！</p>
-</blockquote>
 <p>以一线城市（广州）人均年可支配收入A为参考标准。 存款稳定在A值的3~5倍。 个人收入现金流达到A值2~3倍。</p>
-<h5 id="两个孩子">两个孩子</h5>
+<h3 id="两个孩子">两个孩子</h3>
 <p>赡养两个孩子，不分男女，不管是自己的还是领养抑或是其他。 尽自己最大努力给予他们快乐的童年，有成长的少年和自己喜欢的青年。</p>
 <p>18岁时，拥有诚实、自信、自强不息的独立人格。有能力去实现自己想要的人生。</p>
 
@@ -397,7 +619,7 @@
     
     <li><a href="https://dahouzi.cn/categories/%E4%BD%A0%E5%A5%BD%E5%88%9D%E6%81%8B/">你好初恋 (2)</a></li>
     
-    <li><a href="https://dahouzi.cn/categories/%E6%84%9F%E6%83%B3%E5%9B%9E%E5%BF%86/">感想回忆 (2)</a></li>
+    <li><a href="https://dahouzi.cn/categories/%E6%84%9F%E6%83%B3%E5%9B%9E%E5%BF%86/">感想回忆 (4)</a></li>
     
     <li><a href="https://dahouzi.cn/categories/%E6%97%85%E9%80%94%E5%BE%80%E4%BA%8B/">旅途往事 (23)</a></li>
     
