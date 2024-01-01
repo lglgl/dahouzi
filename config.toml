@@ -1,7 +1,7 @@
 baseURL = "https://dahouzi.cn"
 languageCode = "zh-CN"
 title = "大猴子"
-theme = "maupassant"
+theme = "maupassant1"
 googleAnalytics = ""  # UA-XXXXXXXX-X/G-XXXXXXXXXX
 defaultContentLanguage = "zh-hans"
 publishDir = "docs" 
